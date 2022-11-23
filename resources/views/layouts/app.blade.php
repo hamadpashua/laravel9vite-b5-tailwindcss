@@ -14,6 +14,12 @@
 
 </head>
 <body class="antialiased">
+    <ul>
+        <li><a href="{{ route('blog.index') }}">Home page</a></li>
+        <li><a href="{{ route('blog.create') }}">Create post</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Register</a></li>
+    </ul>
     @yield('content')
 </body>
 </html>

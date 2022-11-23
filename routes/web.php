@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FallbackController;
 use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,6 @@ Route::get('/', function () {
 });
 
 Route::resource('blog', PostsController::class);
+
+// Fallback route
+Route::fallback(FallbackController::class);
